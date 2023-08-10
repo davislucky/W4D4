@@ -15,3 +15,12 @@ def my_min(list)
 end
 #time complexity = n^2
 
+def my_min_two(list)
+    min = list.first
+
+    list.each do |val|
+        min = val if val < min
+    end
+    min
+end
+#time complexity = n
